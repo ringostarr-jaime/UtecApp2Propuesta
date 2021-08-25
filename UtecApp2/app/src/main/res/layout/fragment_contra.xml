@@ -1,0 +1,197 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotexto"
+    tools:context="com.example.jymmy.utecapp.contraFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/colotexto"
+            tools:context="com.example.jymmy.utecapp.contraFrag">
+
+            <!-- TODO: Update blank fragment layout -->
+            <ImageView
+                android:id="@+id/imageView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/input_layout_password4"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@mipmap/icaccount" />
+
+            <TextView
+                android:id="@+id/nombreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView7"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_toEndOf="@+id/imageView7"
+                android:text="TextView"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/carnetTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView7"
+                android:layout_alignStart="@+id/nombreTv"
+                android:text="TextView"
+                android:textColor="@color/cardview_light_background" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/input_layout_password3"
+                android:layout_below="@+id/input_layout_password3"
+                android:layout_marginTop="26dp"
+                android:textColorHint="@color/gris">
+
+                <EditText
+                    android:id="@+id/correoEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableTint="@color/gris"
+                    android:hint="Correo electronico"
+                    android:inputType="textEmailAddress"
+                    android:textColor="@color/gris"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:theme="@style/CampoTextovino" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password4"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView7"
+                android:layout_marginStart="26dp"
+                android:layout_marginTop="32dp"
+                android:textColorHint="@color/gris"
+                app:passwordToggleDrawable="@drawable/visibility"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark">
+
+                <EditText
+                    android:id="@+id/contra1Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableTint="@color/gris"
+                    android:hint="Nueva Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/gris"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:theme="@style/CampoTextovino"
+                    app:passwordToggleDrawable="@android:drawable/ic_menu_view"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/input_layout_password4"
+                android:layout_below="@+id/input_layout_password4"
+                android:layout_marginTop="14dp"
+                android:textColorHint="@color/gris"
+                app:passwordToggleDrawable="@drawable/visibility"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colorPrimaryDark">
+
+                <EditText
+                    android:id="@+id/contra2Edt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableTint="@color/gris"
+                    android:hint="Confirmacion nueva contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/gris"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="15sp"
+                    android:theme="@style/CampoTextovino"
+                    app:passwordToggleDrawable="@android:drawable/ic_menu_view"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorPrimaryDark" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/button2"
+                android:layout_below="@+id/imageView9"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/borde_redondo"
+                android:text="Guardar"
+                android:textColor="@color/cardview_light_background" />
+
+            <TextView
+                android:id="@+id/crnnumeroTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Direccion de informatica"
+                android:textColor="@color/gris"
+                android:layout_below="@+id/input_layout_password2"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="wrap_content"
+                android:layout_height="33dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/crnnumeroTv"
+                android:layout_marginTop="27dp"
+                app:srcCompat="@drawable/brand" />
+
+         <!--   <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
+                -->
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

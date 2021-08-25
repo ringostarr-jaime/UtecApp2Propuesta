@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contenido"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:visibility="visible"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.jymmy.utecapp.Navegador"
+    tools:showIn="@layout/app_bar_navegador">
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+</RelativeLayout>

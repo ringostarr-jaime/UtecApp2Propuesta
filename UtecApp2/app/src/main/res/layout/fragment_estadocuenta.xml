@@ -1,0 +1,218 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colotexto"
+    tools:context="com.example.jymmy.utecapp.Bottom.estadocuentaFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/colotexto"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/matriculaChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="$75.00"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_alignBaseline="@+id/cicloTv"
+                android:layout_alignBottom="@+id/cicloTv"
+                android:layout_alignEnd="@+id/primeraChk" />
+
+            <CheckBox
+                android:id="@+id/primeraChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView8"
+                android:layout_below="@+id/matriculaChk"
+                android:layout_marginEnd="13dp"
+                android:layout_marginTop="12dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="$61.00"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/segundaChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/primeraChk"
+                android:layout_below="@+id/primeraChk"
+                android:layout_marginTop="8dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="$61.00"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/sextaChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/quintaChk"
+                android:layout_below="@+id/quintaChk"
+                android:layout_marginTop="7dp"
+                android:buttonTint="@color/gris"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="Pago Pendiente"
+                android:textColor="@color/gris" />
+
+            <CheckBox
+                android:id="@+id/terceraChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/segundaChk"
+                android:layout_below="@+id/segundaChk"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="$61.00"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/cuartaChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/terceraChk"
+                android:layout_below="@+id/terceraChk"
+                android:layout_marginTop="9dp"
+                android:buttonTint="@color/colorPrimaryDark"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="$61.00"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <CheckBox
+                android:id="@+id/quintaChk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/cuartaChk"
+                android:layout_below="@+id/cuartaChk"
+                android:layout_marginTop="8dp"
+                android:buttonTint="@color/gris"
+                android:checked="true"
+                android:enabled="false"
+                android:layoutDirection="rtl"
+                android:text="Pago Pendiente"
+                android:textColor="@color/gris" />
+
+            <TextView
+                android:id="@+id/segundaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Segunda Cuota"
+                android:textColor="@color/blanco"
+                android:layout_alignBottom="@+id/segundaChk"
+                android:layout_alignStart="@+id/terceraTv" />
+
+            <TextView
+                android:id="@+id/terceraTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tercera Cuota"
+                android:textColor="@color/blanco"
+                android:layout_alignBottom="@+id/terceraChk"
+                android:layout_alignStart="@+id/cuartaTv" />
+
+            <TextView
+                android:id="@+id/cicloTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="62dp"
+                android:text="Matricula Ciclo 01-2017"
+                android:textColor="@color/blanco"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/primeraTv" />
+
+            <TextView
+                android:id="@+id/primeraTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Primera Cuota"
+                android:textColor="@color/blanco"
+                android:layout_above="@+id/segundaChk"
+                android:layout_alignStart="@+id/segundaTv" />
+
+            <TextView
+                android:textColor="@color/gris"
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recuerda pagar antes de cada inicio de mes, para
+estar solvente con tus examenes.
+
+Tienes como fecha limite cada 16 de mes."
+                android:layout_marginEnd="14dp"
+                android:layout_marginTop="36dp"
+                android:layout_below="@+id/sextaChk"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:id="@+id/cuartaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuarta Cuota"
+                android:textColor="@color/blanco"
+                android:layout_alignBottom="@+id/cuartaChk"
+                android:layout_alignStart="@+id/quintaTv" />
+
+            <TextView
+                android:id="@+id/sextaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sexta Cuota"
+                android:textColor="@color/gris"
+                android:layout_alignBottom="@+id/sextaChk"
+                android:layout_alignStart="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/quintaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quinta Cuota"
+                android:textColor="@color/gris"
+                android:layout_alignBottom="@+id/quintaChk"
+                android:layout_alignStart="@+id/sextaTv" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+</RelativeLayout>

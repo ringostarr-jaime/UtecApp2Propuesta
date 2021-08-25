@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#11111100</color>
+    <color name="colorPrimaryDark">#ad1457</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colotexto">#263238</color>
+    <color name="coloicon">#4E6384</color>
+    <color name="colonegro">#000000</color>
+    <color name="gris">#78909c</color>
+    <color name="blanco">#ffffff</color>
+
+<color name="disable_forgorund_grey">#42221f1f</color>
+    <color name="disable_thumb_grey">#1c000000</color>
+    <color name="enable_thumb_green">#46bdbf</color>
+
+
+
+</resources>

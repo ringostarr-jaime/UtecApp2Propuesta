@@ -1,0 +1,112 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotexto"
+    tools:context="com.example.jymmy.utecapp.Biblioteca.bibliofrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Bienvenido"
+                android:textColor="@color/cardview_light_background"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@drawable/biblioteca"
+                android:layout_below="@+id/textView2"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/carnetTv"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:gravity="left|center"
+                android:text="La universidad dispone de bibliotecas especializadas como apoyo para tus estudios, puedes prestar los libros que quieras y renovarlos para seguir utilizandolos, mediante esta opcion podras renovar tu libro prestado recuerda que solo se puede renovar 3 veces."
+                android:textColor="@color/cardview_light_background" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/borde_redondo"
+                android:text="Renovar"
+                android:textColor="@color/cardview_light_background"
+                android:layout_below="@+id/carnetTv"
+                android:layout_alignStart="@+id/webBtn" />
+
+            <Button
+                android:id="@+id/webBtn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/button2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="57dp"
+                android:background="@drawable/borde_redondo"
+                android:text="ir a la web"
+                android:textColor="@color/cardview_light_background" />
+
+            <!--   <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_revert" />-->
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+</RelativeLayout>

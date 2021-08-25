@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotexto"
+    tools:context="com.example.jymmy.utecapp.Bottom.pagarFrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/colotexto"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignBaseline="@+id/textView17"
+                android:layout_alignBottom="@+id/textView17"
+                android:layout_alignStart="@+id/button8"
+                android:background="@drawable/borde_redondo"
+                android:text="pagar"
+                android:textColor="@color/blanco" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_alignStart="@+id/seminarioBtn"
+                android:layout_alignTop="@+id/textView16"
+                android:background="@drawable/borde_redondo"
+                android:text="pagar"
+                android:textColor="@color/blanco" />
+
+            <Button
+                android:id="@+id/seminarioBtn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_redondo"
+                android:text="pagar"
+                android:textColor="@color/blanco"
+                android:layout_alignBottom="@+id/textInputLayout"
+                android:layout_alignStart="@+id/cuotasBtn" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@mipmap/usercircle"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rodigo Diaz de vivar"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_marginTop="26dp"
+                android:layout_alignTop="@+id/imageView12"
+                android:layout_toStartOf="@+id/img" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10-7410-2018"
+                android:textColor="@color/blanco"
+                android:layout_below="@+id/textView4"
+                android:layout_alignEnd="@+id/input_layout_password" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="Num de Cuenta"
+                android:textColor="@color/blanco"
+                android:layout_below="@+id/imageView12"
+                android:layout_alignStart="@+id/imageView13" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                app:passwordToggleDrawable="@android:drawable/ic_menu_view"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/blanco"
+                android:layout_alignBottom="@+id/imageView13"
+                android:layout_toEndOf="@+id/imageView13">
+
+                <EditText
+                    android:id="@+id/passEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignEnd="@+id/textView4"
+                    android:layout_below="@+id/textView7"
+                    android:drawableTint="@color/blanco"
+                    android:inputType="numberPassword"
+                    android:maxLength="16"
+                    android:textColor="@color/blanco"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="10dp"
+                    android:theme="@style/CampoTextovino" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                app:srcCompat="@drawable/card"
+                android:layout_below="@+id/textView7"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="9dp" />
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView7"
+                android:layout_alignEnd="@+id/img"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="7dp"
+                android:text="Elija el banco"
+                android:textColor="@color/blanco" />
+
+            <ImageView
+                android:id="@+id/img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/textView9"
+                android:layout_marginEnd="11dp"
+                app:srcCompat="@mipmap/davivienda" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Matrícula"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_above="@+id/matriculaBtn"
+                android:layout_alignStart="@+id/imageView13" />
+
+            <Button
+                android:id="@+id/cuotasBtn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_redondo"
+                android:text="pagar"
+                android:textColor="@color/blanco"
+                android:layout_alignTop="@+id/cuotaSp"
+                android:layout_alignStart="@+id/matriculaBtn" />
+
+            <Button
+                android:id="@+id/matriculaBtn"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@drawable/borde_redondo"
+                android:text="pagar"
+                android:textColor="@color/blanco"
+                android:layout_alignBottom="@+id/matriculaTv"
+                android:layout_alignEnd="@+id/textView9" />
+
+            <TextView
+                android:id="@+id/matriculaTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Cancelado"
+                android:textColor="@color/blanco"
+                android:textStyle="italic"
+                android:layout_below="@+id/img"
+                android:layout_alignStart="@+id/textView12" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Cuotas"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_below="@+id/matriculaTv"
+                android:layout_alignStart="@+id/matriculaTv" />
+
+            <Spinner
+                android:id="@+id/cuotaSp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView14"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/borde_redondo"
+                android:entries="@array/cuotas"
+                android:popupBackground="@color/colorPrimaryDark"
+                android:scrollbarStyle="outsideOverlay" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:text="Seminarios"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_below="@+id/cuotaSp"
+                android:layout_alignStart="@+id/textInputLayout" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInputLayout"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:textColorHint="@color/gris"
+                app:theme="@style/CampoTextovino"
+                android:layout_alignTop="@+id/textView15"
+                android:layout_alignStart="@+id/matriculaTv">
+
+                <EditText
+                    android:id="@+id/seminarioEdt"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingresar Código de Seminario"
+                    android:textSize="12dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="Diferidos"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_below="@+id/textInputLayout"
+                android:layout_alignStart="@+id/textView15" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="41dp"
+                android:text="Retiros"
+                android:textColor="@color/blanco"
+                android:textStyle="bold"
+                android:layout_below="@+id/button8"
+                android:layout_alignStart="@+id/textView16" />
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp" />
+</RelativeLayout>

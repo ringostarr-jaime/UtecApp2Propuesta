@@ -1,0 +1,181 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colotexto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.jymmy.utecapp.Bottom.notifrag">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/colotexto"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignStart="@+id/relativeLayout"
+                android:layout_marginTop="27dp"
+                app:srcCompat="@mipmap/usercircle" />
+
+            <TextView
+                android:id="@+id/nombreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imageView2"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/imageView2"
+                android:text="Rodigo Diaz de vivar"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carneTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/nombreTv"
+                android:layout_below="@+id/nombreTv"
+                android:text="10-7410-2018"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/nombreTv"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="35dp"
+                android:text="CUM"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/cumTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/textView6"
+                android:layout_below="@+id/textView6"
+                android:text="10.0"
+                android:textColor="@color/blanco" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="43dp"
+                android:background="@drawable/borde_redondo"
+                android:elevation="4dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/evaluacionTv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView10"
+                    android:layout_below="@+id/textView10"
+                    android:layout_marginTop="22dp"
+                    android:text="Semana de Parciales (16 de Marzo al 23 Marzo)"
+                    android:textColor="@color/blanco"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="21dp"
+                    android:text="Recordatorio Academico"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/correoTv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/evaluacionTv"
+                    android:layout_below="@+id/evaluacionTv"
+                    android:layout_marginTop="19dp"
+                    android:text="Tienes correos nuevos en tu bandeja"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/bibliotecaTv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/correoTv"
+                    android:layout_below="@+id/correoTv"
+                    android:layout_marginTop="19dp"
+                    android:text="Debes devolver el libro"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pagosTv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/bibliotecaTv"
+                    android:layout_below="@+id/bibliotecaTv"
+                    android:layout_marginTop="19dp"
+                    android:text="Tienes pendiente pagos"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/aviso1Tv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/pagosTv"
+                    android:layout_below="@+id/pagosTv"
+                    android:layout_marginTop="19dp"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/aviso2Tv"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/aviso1Tv"
+                    android:layout_below="@+id/aviso1Tv"
+                    android:layout_marginTop="19dp"
+                    android:textColor="@color/blanco"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

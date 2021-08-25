@@ -1,0 +1,246 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colotexto"
+    tools:context="com.example.jymmy.utecapp.perfilFrag">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="600dp"
+            android:background="@color/colotexto"
+            tools:context="com.example.jymmy.utecapp.perfilFrag">
+
+
+            <!--   <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_gravity="bottom|end"
+                android:layout_marginBottom="35dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:layout_marginRight="@dimen/fab_margin"
+                app:backgroundTint="@color/colorPrimaryDark"
+                app:fabSize="mini"
+                app:srcCompat="@android:drawable/ic_menu_revert" />-->
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="11dp"
+                app:srcCompat="@mipmap/cuenta"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:id="@+id/estImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView11"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="25dp"
+                android:layout_toStartOf="@+id/guardarBtn"
+                app:srcCompat="@drawable/hat" />
+
+            <TextView
+                android:id="@+id/estudianteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/estImg"
+                android:layout_alignTop="@+id/estImg"
+                android:layout_marginStart="42dp"
+                android:text="Estudiante:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/estnombretv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/estudianteTv"
+                android:layout_below="@+id/estudianteTv"
+                android:text="Rodigo Diaz de vivar"
+                android:textColor="@color/blanco" />
+
+
+            <ImageView
+                android:id="@+id/crnImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/estImg"
+                android:layout_below="@+id/estnombretv"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/carnet" />
+
+            <TextView
+                android:id="@+id/carnetTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/crnImg"
+                android:layout_alignTop="@+id/crnImg"
+                android:layout_marginStart="42dp"
+                android:text="Carné: "
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/crnnumeroTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/carnetTv"
+                android:layout_below="@+id/carnetTv"
+                android:text="10-7410-2018"
+                android:textColor="@color/blanco" />
+
+            <TextView
+                android:id="@+id/planTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/crnnumeroTv"
+                android:layout_toEndOf="@+id/estnombretv"
+                android:text="Plan:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/plyaerTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/crnnumeroTv"
+                android:layout_alignStart="@+id/planTv"
+                android:text="2017"
+                android:textColor="@color/blanco" />
+
+            <ImageView
+                android:id="@+id/carreraImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/crnImg"
+                android:layout_below="@+id/crnnumeroTv"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/books" />
+
+            <TextView
+                android:id="@+id/crrTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/carreraImg"
+                android:layout_alignTop="@+id/carreraImg"
+                android:layout_marginStart="42dp"
+                android:text="Carrera:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/carreraTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/crrTv"
+                android:layout_below="@+id/crrTv"
+                android:text="Ingenieria en Computacion cuantica"
+                android:textColor="@color/blanco"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/correoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/carreraImg"
+                android:layout_below="@+id/carreraImg"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/arroba" />
+
+            <TextView
+                android:id="@+id/correoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/correoImg"
+                android:layout_alignTop="@+id/correoImg"
+                android:layout_marginStart="42dp"
+                android:text="Correo:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/corrTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/correoImg"
+                android:layout_alignStart="@+id/correoTv"
+                android:text="10-7410-2018@mail.utec.edu.sv"
+                android:textColor="@color/blanco"
+                android:textSize="12sp" />
+
+
+            <ImageView
+                android:id="@+id/telefoImg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/correoImg"
+                android:layout_below="@+id/correoImg"
+                android:layout_marginTop="13dp"
+                app:srcCompat="@drawable/phone" />
+
+            <TextView
+                android:id="@+id/telefoTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/corrTv"
+                android:layout_alignTop="@+id/telefoImg"
+                android:text="Telefono:"
+                android:textColor="@color/blanco"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/telTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/telefoTv"
+                android:layout_below="@+id/telefoTv"
+                android:text="7878-7575"
+                android:textColor="@color/blanco"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/guardarBtn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_marginTop="39dp"
+                android:background="@drawable/borde_redondo"
+                android:text="modificar"
+                android:textColor="@color/cardview_light_background"
+                android:layout_below="@+id/telTv"
+                android:layout_alignStart="@+id/imageView11" />
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colotexto"
+        android:visibility="visible"
+        app:itemIconTint="@color/coloicon"
+        app:itemTextColor="@color/colorPrimaryDark"
+        app:menu="@menu/navigation"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="31dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

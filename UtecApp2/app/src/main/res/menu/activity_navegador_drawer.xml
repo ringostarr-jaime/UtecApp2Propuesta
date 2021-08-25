@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/perfil"
+            android:icon="@drawable/icaccon"
+            android:text="Perfil"
+            android:textColor="@color/blanco"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/notificaciones"
+            android:icon="@drawable/alertas"
+            android:text="Notificaciones"
+            android:textColor="@color/blanco"
+            android:title="Notificaciones" />
+        <item
+            android:id="@+id/calendario"
+            android:icon="@mipmap/calendar"
+            android:text="Calendario"
+            android:textColor="@color/blanco"
+            android:title="Calendario" />
+        <item
+            android:id="@+id/bibliotecario"
+            android:icon="@drawable/libro"
+            android:text="Sistema Bibliotecario"
+            android:textColor="@color/blanco"
+            android:title="Sistema Bibliotecario" />
+        <item
+            android:id="@+id/contra"
+            android:icon="@drawable/pass"
+            android:text="Cambiar contraseña"
+            android:textColor="@color/blanco"
+            android:title="Cambiar contraseña" />
+        <item
+            android:id="@+id/correo"
+            android:icon="@drawable/arroba"
+            android:text="Correo UTEC"
+            android:textColor="@color/blanco"
+            android:title="Correo UTEC" />
+
+        <item
+            android:id="@+id/power"
+            android:icon="@mipmap/power"
+            android:title="Cerrar session" />
+
+    </group>
+
+
+
+
+</menu>

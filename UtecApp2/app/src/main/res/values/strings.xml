@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">UTEC APP</string>
+    <string name="title_activity_main"></string>
+
+    <string name="noti">Notificaciones</string>
+    <string name="consultanota">Consulta de Notas</string>
+    <string name="expe">Expediente Academico</string>
+    <string name="cuenta">Estado de Cuenta</string>
+    <string name="pago">Pago en linea</string>
+    <string name="title_activity_navegador">Navegador</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_notificaciones">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <array name="bancos">
+        <item>Banco Agricola</item>
+        <item>Scotiabank</item>
+        <item>Banco promerica</item>
+        <item>Davivienda</item>
+    </array>
+
+    <array name="cuotas">
+        <item>1ª Cuota</item>
+        <item>2ª Cuota</item>
+        <item>3ª Cuota</item>
+        <item>4ª Cuota</item>
+        <item>5ª Cuota</item>
+        <item>6ª Cuota</item>
+    </array>
+
+</resources>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/portadafull"
+    tools:context="com.example.jymmy.utecapp.Inicio.Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="60dp"
+        android:weightSum="1"
+        android:layout_marginTop="202dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.06"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/carreraImg"
+                android:layout_width="43dp"
+                android:layout_height="26dp"
+                app:srcCompat="@drawable/ic_action_name" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <EditText
+                    android:id="@+id/usuarioEdt"
+                    android:layout_width="209dp"
+                    android:layout_height="wrap_content"
+                    android:digits="1234567890"
+                    android:fontFamily="sans-serif"
+                    android:hint="Carnet"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:singleLine="true"
+                    android:textColor="@color/colotexto"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/CampoTextovino" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="43dp"
+                android:layout_height="26dp"
+                app:srcCompat="@drawable/pass" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_password"
+                android:layout_width="209dp"
+                android:layout_height="match_parent"
+                app:passwordToggleDrawable="@drawable/visibility"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/colotexto">
+
+                <EditText
+                    android:id="@+id/passEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:drawableTint="@color/colotexto"
+                    android:hint="Contraseña"
+                    android:inputType="textPassword"
+                    android:textColor="@color/colotexto"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:theme="@style/CampoTextovino"
+                   />
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_weight="0.19">
+
+            <Button
+                android:id="@+id/ingresarbtn"
+                android:layout_width="120dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/btningresar" />
+
+            <TextView
+                android:id="@+id/recuperarTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="11dp"
+                android:text="Restablecer contraseña"
+                android:textColor="@color/colotexto"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
